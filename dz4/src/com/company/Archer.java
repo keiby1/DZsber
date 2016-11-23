@@ -6,7 +6,7 @@ import java.util.Objects;
  * Created by lushi on 21.11.2016.
  */
 public class Archer implements Warrior {
-    String name, squad;
+    String name, squad; //все поля по умолчанию public. смысл тогда в методах setName, setSquadName...?
     int health = 80;
     int damage = 80;
 
@@ -25,7 +25,7 @@ public class Archer implements Warrior {
 
     @Override
     public boolean isAlive() {
-        if(health > 0)
+        if(health > 0) //можно просто записать return health > 0;
             return true;
         else
             return false;

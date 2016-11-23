@@ -6,7 +6,7 @@ import java.util.Scanner;
 /**
  * Created by lushi on 21.11.2016.
  */
-public class Battle {
+public class Battle { //форматирование кода оставляет желать лучшего. нужны расстояния между методами
     public void namesWar(Squad s){
         Scanner sc = new Scanner(System.in);
         Random r = new Random();
@@ -65,7 +65,7 @@ public class Battle {
         Squad squad2 = new Squad();
 
         initSquad(squad1);
-
+//а эти расстояния - нет
 
         System.out.println("1-Клонировать отряд, 2-Создать отличный отряд");
         int key = sc.nextInt();

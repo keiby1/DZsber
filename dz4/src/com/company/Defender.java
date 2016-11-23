@@ -14,14 +14,14 @@ public class Defender implements Warrior {
     }
 
     @Override
-    public void takeDamage(int damage) {
+    public void takeDamage(int damage) {//логичнее сначала отнять, а потом показывать, сколько осталось
         System.out.println("Осталось здоровья: " + (health-damage));
         health -=damage;
     }
 
     @Override
     public boolean isAlive() {
-        if(health > 0)
+        if(health > 0) //аналогично, когда проверяется условие или возвращается результат проверки условия, можно сразу возвращать/сразу проверять
             return true;
         else
             return false;

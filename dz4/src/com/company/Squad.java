@@ -24,12 +24,12 @@ public class Squad {
     }
     public boolean hasAliveWarriors(){
         for(int i =0;i < n; i++){
-            if(warrior[i].isAlive() ==  true){
+            if(warrior[i].isAlive()/* ==  true* излишне*/){
                 return true;
             }
         }
         return false;
-    }
+    }//нужны аннотации, пустые строки
     public String toString(){
         return name;
     }

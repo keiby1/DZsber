@@ -16,7 +16,7 @@ public class DateHelper {
     private int hour = calendar.get(Calendar.HOUR);
     private int minute = calendar.get(Calendar.MINUTE);
 
-    private int counterMin = 0;
+    private int counterMin = 0;//календарь и так может хранить время и изменять его. это изобретение велосипеда.
     private int counterHour = 0;
     private int counterDay = 0;
     private int counterMonth = 0;
@@ -25,7 +25,7 @@ public class DateHelper {
     public String getFormattedStartDate(){  //возвращает дату начала сражения
      return Integer.toString(day)+"."+Integer.toString(month)+"."+Integer.toString(year)+ " " + hour +":"+minute;
 }
-    public void skipTime() {
+    public void skipTime() { //все это решается одной строчкой - calendar.add(Calendar.MINUTE, 30);
         counterMin += 30;
 
         if(counterMin >= 60){
